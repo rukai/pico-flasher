@@ -1,0 +1,16 @@
+[package]
+name = "pico_flasher"
+version = "0.0.3"
+edition = "2024"
+license = "MIT"
+description = "A simple tool for flashing elf files to RP microcontrollers over USB"
+repository = "https://github.com/rukai/rukaibox_firmware"
+
+[dependencies]
+picoboot-rs = "0.2.0"
+rusb = "0.9.4"
+uf2-decode = "0.2.0"
+goblin = "0.9.3"
+miette = { version = "7.4.0", features = ["fancy"] }
+arrayvec = "0.7.6"
+clap = { version = "4.5.39", features = ["derive"] }
